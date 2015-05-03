@@ -11,10 +11,13 @@ set autoread
 "set expandtab
 set tabstop=4
 
+"Use system clipboard
+set clipboard=unnamed
+
 let @l = ':!pdflatex % '
 
-nmap <silent> <C-N> :NERDTreeToggle<CR>
-nmap <silent> <C-M> :TlistToggle<CR>
+"nmap <silent> <C-N> :NERDTreeToggle<CR>
+"nmap <silent> <C-M> :TlistToggle<CR>
 
 let  g:UltiSnipsListSnippets = '<f5>'
 
