@@ -1,5 +1,5 @@
-"execute pathogen#infect()
-"execute pathogen#helptags()
+execute pathogen#infect()
+execute pathogen#helptags()
 
 set ts=4
 set number
