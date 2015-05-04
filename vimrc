@@ -30,7 +30,9 @@ set clipboard=unnamed
 
 let @l = ':!pdflatex % '
 
-"nmap <silent> <C-N> :NERDTreeToggle<CR>
+"Nerdtree
+nmap <silent> <C-N> :NERDTreeToggle<CR>
+
 "nmap <silent> <C-M> :TlistToggle<CR>
 
 let  g:UltiSnipsListSnippets = '<f5>'
