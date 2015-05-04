@@ -2,7 +2,7 @@
 
 ### Installation:
 
-	git clone https://github.com/thekeymaker/my_vimrc_files.git
+	git clone https://github.com/thekeymaker/my_vimrc_files.git ~/.vimrc
 
 ### Creating Links:
 
