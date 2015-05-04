@@ -14,6 +14,12 @@ let g:syntastic_check_on_wq = 0
 "Easymotion
 map <Leader> <Plug>(easymotion-prefix)
 
+"Vim-Airline
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#hunks#enabled=0
+set timeoutlen=20
+
 "Theme
 colorscheme hemisu
 set background=dark
