@@ -2,6 +2,9 @@
 execute pathogen#infect()
 execute pathogen#helptags()
 
+"Don't forget tmux -2 for colors
+set t_Co=256
+
 "For Syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
