@@ -25,6 +25,7 @@ set timeoutlen=20
 
 "Ultisnips
 let  g:UltiSnipsListSnippets = '<f2>'
+let g:UltiSnipsExpandTrigger="<f3>"
 let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsSnippetsDir="~/.vim/my_snippets"
 let g:UltiSnipsSnippetDirectories=["my_snippets"]
