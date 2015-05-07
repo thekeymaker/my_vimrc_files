@@ -23,6 +23,13 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#hunks#enabled=0
 set timeoutlen=20
 
+"Ultisnips
+let  g:UltiSnipsListSnippets = '<f2>'
+let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsSnippetsDir="~/.vim/my_snippets"
+let g:UltiSnipsSnippetDirectories=["my_snippets"]
+
+
 "Theme
 colorscheme hemisu
 set background=dark
@@ -47,7 +54,6 @@ nmap <silent> <C-N> :NERDTreeToggle<CR>
 
 "nmap <silent> <C-M> :TlistToggle<CR>
 
-let  g:UltiSnipsListSnippets = '<f5>'
 
 
 "highlight OverLength ctermbg=red ctermfg=white guibg=#592929
