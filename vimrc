@@ -3,7 +3,7 @@ execute pathogen#infect()
 execute pathogen#helptags()
 
 "Don't forget tmux -2 for colors
-set t_Co=256
+"set t_Co=256
 
 "For Syntastic
 set statusline+=%#warningmsg#
@@ -48,10 +48,6 @@ if &term =~ '^screen'
 endif
 
 
-"Theme
-colorscheme hemisu
-set background=dark
-
 set ts=4
 set number
 syntax on
@@ -72,21 +68,10 @@ nmap <silent> <C-N> :NERDTreeToggle<CR>
 
 "nmap <silent> <C-M> :TlistToggle<CR>
 
-
-
 "highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 "match OverLength /\%123v.\+/
 
-
 set linebreak
-set t_Co=256
-
-
-"SET Colorscheme
-"colorscheme desert
-"colorscheme inkpot 
-"colorscheme distinguished
-
 
 "Adds file name line to bottom
 set laststatus=2
@@ -94,3 +79,8 @@ set laststatus=2
 "set t_AB=^[[48;5;%dm
 "set t_AF=^[[38;5;%dm
 "set t_AF=^[[38;5;%dm
+
+"Theme
+set background=dark
+colorscheme hemisu
+
