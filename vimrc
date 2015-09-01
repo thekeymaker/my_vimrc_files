@@ -15,7 +15,6 @@ set t_Co=256
 "let g:syntastic_check_on_wq = 0
 
 "Easymotion
-map h <Plug>(easymotion-w)
 map g <Plug>(easymotion-s)
 
 "Vim-Airline
@@ -48,18 +47,36 @@ if &term =~ '^screen'
     set ttymouse=xterm2
 endif
 
-set ts=4
-set number
-syntax on
-set mouse=a
+set ts=4      " a tab is four spaces
+set number    " always show line numbers
+syntax on     " enable syntax highlighting
+set mouse=a   " let your mouse resize splits
 set autoread
+"set expandtab " makes tabs into actual spaces
+set linebreak
+set laststatus=2       " adds file names to status bar
+set clipboard=unnamed  " use sytem clipboard
+set autoindent         " enable auto indenting
+set copyindent         " copy the previous indent when auto indenting
+set shiftwidth=4       " number of spaces to used for auto indent
+set showmatch          " show matching parenthesis
+set ignorecase         " ignore case when searching
+set smartcase          " ignore case if search pattern is all lowercase
+set smarttab           " inset tabs using shiftwidth, not ts
+set hlsearch           " highlight search terms
+set incsearch          " show search matches as you type
 
-"set expandtab
-set tabstop=4
+set history=1000         " remember more commands and search history
+set undolevels=1000      " use many muchos levels of undo
+set title                " change the terminal's title
+set visualbell           " don't beep
+set noerrorbells         " don't beep
 
-"Use system clipboard
-set clipboard=unnamed
+set nobackup
+set noswapfile
 
+
+" For Lates
 let @l = ':!pdflatex % '
 
 "Nerdtree
@@ -67,11 +84,6 @@ nmap <silent> <C-N> :NERDTreeToggle<CR>
 
 "highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 "match OverLength /\%123v.\+/
-
-set linebreak
-
-"Adds file name line to bottom
-set laststatus=2
 
 "Theme
 set background=dark
