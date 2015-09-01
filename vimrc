@@ -15,7 +15,8 @@ set t_Co=256
 "let g:syntastic_check_on_wq = 0
 
 "Easymotion
-map <Leader> <Plug>(easymotion-prefix)
+map h <Plug>(easymotion-w)
+map g <Plug>(easymotion-s)
 
 "Vim-Airline
 let g:airline_powerline_fonts = 1
