@@ -15,7 +15,7 @@ set t_Co=256
 "let g:syntastic_check_on_wq = 0
 
 "Easymotion
-map t <Plug>(easymotion-s)
+map b <Plug>(easymotion-s)
 
 "Vim-Airline
 let g:airline_powerline_fonts = 1
@@ -81,6 +81,20 @@ let @l = ':!pdflatex % '
 
 "Nerdtree
 nmap <silent> <C-N> :NERDTreeToggle<CR>
+
+autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
+
+" Close all open buffers on entering a window if the only
+" buffer that's left is the NERDTree buffer
+function! s:CloseIfOnlyNerdTreeLeft()
+  if exists("t:NERDTreeBufName")
+    if bufwinnr(t:NERDTreeBufName) != -1
+      if winnr("$") == 1
+        q
+      endif
+    endif
+  endif
+endfunction
 
 "highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 "match OverLength /\%123v.\+/
